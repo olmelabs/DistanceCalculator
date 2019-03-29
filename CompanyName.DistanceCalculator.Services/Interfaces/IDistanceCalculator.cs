@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CompanyName.DistanceCalculator.Services.Interfaces
+﻿namespace CompanyName.DistanceCalculator.Services.Interfaces
 {
     public interface IDistanceCalculator
     {

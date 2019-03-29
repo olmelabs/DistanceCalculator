@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CompanyName.DistanceCalculator.Services.Interfaces;
+﻿using CompanyName.DistanceCalculator.Services.Interfaces;
 using CompanyName.DistanceCalculator.V1.Models;
 using Microsoft.AspNetCore.Mvc;
 

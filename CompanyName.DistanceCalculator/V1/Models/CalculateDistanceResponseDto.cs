@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace CompanyName.DistanceCalculator.V1.Models
+﻿namespace CompanyName.DistanceCalculator.V1.Models
 {
     public class CalculateDistanceResponseDto
     {
