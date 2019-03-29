@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CompanyName.DistanceCalculator.Services.Interfaces;
 using CompanyName.DistanceCalculator.V1.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,9 +10,10 @@ namespace CompanyName.DistanceCalculator.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class DistanceController : ControllerBase
     {
-        public DistanceController()
+        private readonly IDistanceCalculator _calculator;
+        public DistanceController(IDistanceCalculator calculator)
         {
-
+            _calculator = calculator;
         }
 
         // GET api/values. 
@@ -26,7 +28,9 @@ namespace CompanyName.DistanceCalculator.Controllers
                 return BadRequest(ModelState);
             }
 
-            var responseDto = new CalculateDistanceResponseDto(0);
+            var distance = _calculator.Calculate(dto.Latitude1.Value, dto.Longtitude1.Value, dto.Latitude2.Value, dto.Longtitude2.Value);
+            var responseDto = new CalculateDistanceResponseDto(distance);
+
             return Ok(responseDto);
         }
     }

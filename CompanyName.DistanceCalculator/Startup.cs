@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CompanyName.DistanceCalculator.Services.Implementations;
+using CompanyName.DistanceCalculator.Services.Interfaces;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
@@ -28,6 +30,8 @@ namespace CompanyName.DistanceCalculator
             services.AddMvcCore().AddVersionedApiExplorer(options => options.GroupNameFormat = "'v'VVV");
             services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
             services.AddSwaggerGen();
+
+            services.AddTransient<IDistanceCalculator, LawOfCosines>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

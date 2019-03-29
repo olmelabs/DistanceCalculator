@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{22EC0F8D-44B6-4A50-BDAA-98532EC2789A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.DistanceCalculator.Services", "CompanyName.DistanceCalculator.Services\CompanyName.DistanceCalculator.Services.csproj", "{3F1E37FA-82FD-465A-8EFC-122064F9BC93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{22EC0F8D-44B6-4A50-BDAA-98532EC2789A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22EC0F8D-44B6-4A50-BDAA-98532EC2789A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22EC0F8D-44B6-4A50-BDAA-98532EC2789A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1E37FA-82FD-465A-8EFC-122064F9BC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1E37FA-82FD-465A-8EFC-122064F9BC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1E37FA-82FD-465A-8EFC-122064F9BC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1E37FA-82FD-465A-8EFC-122064F9BC93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
